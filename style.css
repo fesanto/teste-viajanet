@@ -12,6 +12,184 @@ body{
     background-color: #f7f7f7;
 }
 
+
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 5px 0;
+}
+.entire-menu {
+    position: absolute;
+    /* background-color: #0164BF; */
+    width: 100%;
+}
+.hamburguer {
+    width: 16px;
+    height: 20px;
+    display: block;
+    position: relative;
+    background: none;
+    margin: 0 0 10px 0;
+}
+.hamburguer:after, .hamburguer:before, .hamburguer span, .hamburguer label {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    /* background: #0164BF; */
+    left: 0;
+    position: absolute;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.hamburguer:before {
+    top: 0;
+}
+.hamburguer:after {
+    bottom: 8px;
+    background: #0164BF;
+}
+.hamburguer:focus {
+    outline: none;
+}
+.hamburguer label {
+    /* width: 100%;
+    height: 100%;
+    background: none;
+    cursor: pointer;
+    z-index: 1000; */
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    top: -6px;
+}
+.hamburguer span {
+    top: 5px;
+    padding: 20px;
+}
+#change-hamburguer {
+    display: none;
+}
+#change-hamburguer:checked ~ .hamburguer:before, #change-hamburguer:checked ~ .hamburguer:after {
+    top: 10px;
+    margin-top: -10%;
+    background: #ffffff;
+}
+#change-hamburguer:checked ~ .hamburguer:before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#change-hamburguer:checked ~ .hamburguer:after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#change-hamburguer:checked ~ .hamburguer span {
+    opacity: 0;
+}
+#change-hamburguer:checked ~ .menu {
+    max-height: 750px;
+}
+.menu {
+    max-height: 0;
+    height: auto;
+    background-color: #02427b;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    width: 65%;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+}
+.menu a:hover {
+    border-left: 5px solid #e57373;
+    color: #e57373;
+    background: #222;
+}
+.menu :nth-child(10){
+    background-color: #0164bf;
+    padding: 20px 20px;
+}
+.menu__bottom{
+    color: #ffffff;
+    font-size: 10px;
+    padding: 25px 20px;
+    line-height: 1.5;
+}
+.menu__bottom :nth-child(1){
+    text-transform: uppercase;
+}
+.menu__bottom :nth-child(even){
+    font-size: 20px;
+}
+
+/* AIRPLANE TICKETS SECTION */
+.tickets{
+    background-color: #EBEBEB;
+}
+
+.international-slider,
+.national-slider{
+    padding-bottom: 45px;
+
+}
+
+.tickets h2,
+.international-slider h2,
+.national-slider h2{
+    padding: 15px 15px 30px;
+    font-size: 22px;
+}
+
+.international-slider__container,
+.national-slider__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+ 
+.slide{
+    display: none;
+}
+
+
+.box{
+    background-color: #ffffff;
+    margin: 10px;
+}
+  
+.slide img{
+    width:100%;
+}
+  
+.slider-dot{
+    text-align:center;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+.active, 
+.dot:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 /* AIRLINES SECTION */
 .airlines h2{
     padding: 15px 15px 30px;
@@ -72,6 +250,7 @@ body{
     line-height: 1.5;
 }
 
+
 /* OFFER SECTION */
 .offers{
     background-color: #0164BF;
@@ -120,6 +299,7 @@ body{
     text-decoration: none;
     color: #ffffff;
 }
+
 
 /* FOOTER */
 .footer{

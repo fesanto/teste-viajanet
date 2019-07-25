@@ -10,10 +10,146 @@
 </head>
 
 <body>
-    <header>
-        <nav></nav>
+    <header class="nav">
+        <div class="entire-menu">
+            <input type="checkbox" id="change-hamburguer" />
+
+            <a class="hamburguer" href="#">
+                <span></span>
+                <label for="change-hamburguer"></label>
+            </a>
+            <div class="menu">
+                <a href="https://www.viajanet.com.br/shop/authentication/#/sign-in">Acesse ou Crie sua conta</a>
+                <hr>
+                <a href="https://www.viajanet.com.br/passagens-aereas">Passagens Aéreas</a>
+                <a href="https://www.viajanet.com.br/pacotes-viagens">Pacotes de Viagem</a>
+                <a
+                    href="https://hoteis.viajanet.com.br/?utm_source=ViajaNet&utm_medium=Menu_Institucional&utm_campaign=Header&lang=pt-br&selected_currency=BRL&label=ViajaNet_Home_Menu_Institucional">Hotéis</a>
+                <a href="http://carros.viajanet.com.br/#/">Carros</a>
+                <a href="https://www.viajanet.com.br/seguros">Seguros</a>
+                <a href="https://www.viajanet.com.br/passagens-aereas/quandoviajar">Quando Viajar</a>
+                <a href="https://atendimento.viajanet.com.br/hc/pt-br">Atendimento</a>
+                <a href="https://www.viajanet.com.br/shop/authentication/#/sign-in">Minhas reservas</a>
+                <div class="menu__bottom">
+                    <p>ligue</p>
+                    <p>4007-1510</p>
+                    <p>Regiões Metropolitanas</p>
+                    <p>(11) 4007-1510</p>
+                    <p>Demais Regiões</p>
+                </div>
+            </div>
+
+        </div>
+        <img src="logo-mobile.PNG">
     </header>
 
+    <section class="tickets">
+        <h2>Destinos preferidos dos viajantes de <span>São Paulo</span></h2>
+
+        <section class="national-slider">
+            <h2>Passagens Nacionais</h2>
+            <section class="national-slider__container">
+                <div class="slide box">
+                    <img src="recife.PNG" alt="sunset sea">
+                    <div class="airlines__text">
+                        <p>Voos para Recife</p>
+                        <p>IDA e VOLTA, A PARTIR DE:</p>
+                        <p>R$ 817</p>
+                        <p><span>Preço Final,</span> taxas inclusas!</p>
+                    </div>
+                </div>
+
+                <div class="slide box">
+                    <img src="salvador.PNG" alt="a road and a coast">
+                    <div class="airlines__text">
+                        <p>Voos para Salvador</p>
+                        <p>IDA e VOLTA, A PARTIR DE:</p>
+                        <p>R$ 392</p>
+                        <p><span>Preço Final,</span> taxas inclusas!</p>
+                    </div>
+                </div>
+
+                <div class="slide box">
+                    <img src="fortaleza.PNG" alt="a black and white pier picture">
+                    <div class="airlines__text">
+                        <p>Voos para Fortaleza</p>
+                        <p>IDA e VOLTA, A PARTIR DE:</p>
+                        <p>R$ 735</p>
+                        <p><span>Preço Final,</span> taxas inclusas!</p>
+                    </div>
+                </div>
+
+                <div class="slide box" alt="sea and rocks">
+                    <img src="maceio.PNG">
+                    <div class="airlines__text">
+                        <p>Voos para Maceió</p>
+                        <p>IDA e VOLTA, A PARTIR DE:</p>
+                        <p>R$ 668</p>
+                        <p><span>Preço Final,</span> taxas inclusas!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slider-dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </section>
+        </section>
+
+        <section class="international-slider">
+            <h2>Passagens Internacionais</h2>
+            <section class="international-slider__container">
+                <div class="slide box">
+                    <img src="lisboa.PNG" alt="sunset sea">
+                    <div class="airlines__text">
+                        <p>Voos para Lisboa</p>
+                        <p>IDA e VOLTA, A PARTIR DE:</p>
+                        <p>R$ 2.286</p>
+                        <p><span>Preço Final,</span> taxas inclusas!</p>
+                    </div>
+                </div>
+
+                <div class="slide box">
+                    <img src="miami.PNG" alt="a road and a coast">
+                    <div class="airlines__text">
+                        <p>Voos para Miami</p>
+                        <p>IDA e VOLTA, A PARTIR DE:</p>
+                        <p>R$ 2.077</p>
+                        <p><span>Preço Final,</span> taxas inclusas!</p>
+                    </div>
+                </div>
+
+                <div class="slide box">
+                    <img src="santiago.PNG" alt="a black and white pier picture">
+                    <div class="airlines__text">
+                        <p>Voos para Santiago</p>
+                        <p>IDA e VOLTA, A PARTIR DE:</p>
+                        <p>R$ 1.042</p>
+                        <p><span>Preço Final,</span> taxas inclusas!</p>
+                    </div>
+                </div>
+
+                <div class="slide box" alt="sea and rocks">
+                    <img src="novaiorque.PNG">
+                    <div class="airlines__text">
+                        <p>Voos para Nova Iorque</p>
+                        <p>IDA e VOLTA, A PARTIR DE:</p>
+                        <p>R$ 2.641</p>
+                        <p><span>Preço Final,</span> taxas inclusas!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slider-dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </section>
+        </section>
+    </section>
 
     <section class="airlines">
         <h2>Companhias aéreas preferidas dos viajantes</h2>
