@@ -12,9 +12,64 @@ body{
     background-color: #f7f7f7;
 }
 
-.box{
+/* AIRLINES SECTION */
+.airlines h2{
+    padding: 15px 15px 30px;
+    font-size: 22px;
+}
+
+.airlines__box{
     background-color: #ffffff;
     margin: 10px;
+}
+
+.airlines__text{
+    margin: 15px;
+    padding-bottom: 15px;
+}
+
+.airlines__text :nth-child(1){
+    color: #0164bf;
+    font-weight: bold;
+}
+
+.airlines__text :nth-child(2){
+    color: #ccc;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.airlines__text :nth-child(3){
+    color: #ffa600;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.airlines__text :nth-child(4){
+    color: #7c7c7c;
+    font-size: 13px;
+}
+
+.airlines__text span{
+    font-weight: bolder;
+    color: #7c7c7c!important;
+    font-size: 13px;
+}
+
+.airlines__ratings{
+    margin-top: 70px;
+}
+
+.airlines__bottom{
+    background-color: #EBEBEB;
+}
+
+.airlines__bottom p{
+    color: #555555;
+    font-size: 11.5px;
+    padding: 15px 20px;
+    margin-bottom: 45px;
+    line-height: 1.5;
 }
 
 /* OFFER SECTION */
