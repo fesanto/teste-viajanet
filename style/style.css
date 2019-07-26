@@ -305,6 +305,42 @@ hr{
     padding: 50px 30px;
 }
 
+@media (min-width: 375px){
+    .menu{
+        width: 53%;
+    }
+    .airlines__ratings{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    }
+    .offers__form-header{
+        display: flex;
+        padding-bottom: 15px;
+    }
+    .offers__form-header p{
+        padding: 10px 20px 0 5px;
+    }
+    .offers__form{
+        padding: 15px 45px 15px;
+    }
+    .offers__policy{
+        padding-bottom: 35px;
+    } 
+    .footer__appmobile{
+        padding: 25px 20px 0 10px;
+    }
+    .footer__appmobile-afiliados{
+        padding-right: 20px;
+    }
+    .footer__logo ul{
+        justify-content: center;
+    }
+    .footer__logo li{
+        padding: 0 15px;
+    }
+}
+
 @media (min-width: 600px){
     .menu{
         width: 35%;
@@ -341,4 +377,8 @@ hr{
     .footer__logo li{
         padding: 0 15px;
     }
+}
+
+@media (min-width: 900px){
+
 }
