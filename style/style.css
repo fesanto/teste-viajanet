@@ -6,379 +6,69 @@
     list-style:none;
     border:0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #555555;
+    text-decoration: none;
 }
 
 body{
     background-color: #f7f7f7;
 }
 
-/* NAV */
 .nav{
+    background-color: #ffffff;
     display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    padding: 5px 0;
-}
-.entire-menu {
-    position: absolute;
-    width: 100%;
-}
-.hamburguer {
-    width: 16px;
-    height: 20px;
-    display: block;
-    position: relative;
-    background: none;
-    margin: 20px 0 10px 20px;
-}
-/* mexe no incone do menu */
-.hamburguer:after, .hamburguer:before, .hamburguer span, .hamburguer label {
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #0164bf;
-    left: 0;
-    position: absolute;
-    transition: all 300ms ease-in-out;
-}
-.hamburguer:before {
-    top: 0;
-}
-/* mexe no incone do menu */
-.hamburguer:after {
-    bottom: 8px;
-    background: #0164BF;
-}
-.hamburguer:focus {
-    outline: none;
-}
-.hamburguer label {
-    width: 60px;
-    height: 60px;
-    background: none;
-    cursor: pointer;
-    z-index: 1000;
-    top: -6px;
-}
-.hamburguer span {
-    top: 5px;
-}
-#change-hamburguer {
-    display: none;
-}
-#change-hamburguer:checked ~ .hamburguer:before, #change-hamburguer:checked ~ .hamburguer:after {
-    top: 10px;
-    margin-top: -10%;
-}
-#change-hamburguer:checked ~ .hamburguer:before {
-    transform: rotate(-45deg);
-}
-#change-hamburguer:checked ~ .hamburguer:after {
-    transform: rotate(45deg);
-}
-#change-hamburguer:checked ~ .hamburguer span {
-    opacity: 0;
-}
-#change-hamburguer:checked ~ .menu {
-    max-height: 750px;
-}
-.menu {
-    max-height: 0;
-    height: auto;
-    background: #02427b;
-    transition: all 300ms ease-in-out;
-    overflow: hidden;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    width: 65%;
-}
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    padding: 15px 20px;
-    display: block;
-}
-.menu a:hover {
-    border-left: 5px solid #e57373;
-    color: #e57373;
-    background: #222;
-}
-.menu :nth-child(10){
-    background-color: #0164bf;
-    padding: 20px 20px;
-}
-.menu__bottom{
-    color: #ffffff;
-    font-size: 10px;
-    padding: 25px 20px;
-    line-height: 1.5;
-}
-.menu__bottom :nth-child(1){
-    text-transform: uppercase;
-}
-.menu__bottom :nth-child(even){
-    font-size: 20px;
-}
-
-/* AIRPLANE TICKETS SECTION */
-.tickets{
-    background-color: #f7f7f7;
-}
-.tickets ul{
-    display: none;
-}
-.tickets h2 span:hover > ul{
-    display: block;
-}
-.international-slider,
-.national-slider{
-    padding-bottom: 45px;
-}
-.tickets h2,
-.international-slider h2,
-.national-slider h2{
-    padding: 15px 15px 30px;
-    font-size: 22px;
-}
-.international-slider__container,
-.national-slider__container {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-}
-.slide{
-    display: none;
-}
-.box{
-    background-color: #ffffff;
-    margin: 10px;
-}
-.slide img{
-    width:100%;
-}
-.slider-dot{
-    text-align:center;
-}
-.dot {
-    height: 7px;
-    width: 7px;
-    margin: 0 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    display: inline-block;
-}
-.active, 
-.dot:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-/* AIRLINES SECTION */
-.airlines h2{
-    padding: 15px 15px 30px;
-    font-size: 22px;
-}
-.airlines__box{
-    background-color: #ffffff;
-    margin: 10px;
-}
-.airlines__box img{
-    object-fit: fill;
-    width: 100%;
-}
-.airlines__text{
-    margin: 15px;
-    padding-bottom: 15px;
-}
-.airlines__text :nth-child(1){
-    color: #0164bf;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
     font-weight: bold;
 }
-.airlines__text :nth-child(2){
-    color: #ccc;
-    font-weight: bold;
-    font-size: 12px;
-}
-.airlines__text :nth-child(3){
-    color: #ffa600;
-    font-weight: bold;
-    font-size: 18px;
-}
-.airlines__text :nth-child(4){
-    color: #7c7c7c;
-    font-size: 13px;
-}
-.airlines__text span{
-    font-weight: bolder;
-    color: #7c7c7c!important;
-    font-size: 13px;
-}
-.airlines__ratings{
-    margin-top: 70px;
-}
-/* .airlines__bottom{
-    background-color: #f7f7f7;
-} */
-.airlines__bottom p{
-    background-color: #EBEBEB;
-    color: #555555;
-    font-size: 11.5px;
-    padding: 15px 20px;
-    margin-bottom: 45px;
-    line-height: 1.5;
-}
-
-
-/* OFFER SECTION */
-.offers{
-    background-color: #0164BF;
-    color: #ffffff;
-}
-.offers p{
-    padding: 0 39px 20px 0;
-    font-weight: 600;
-    font-size: 15px;
-}
-.offers__form{
-    padding: 15px 40px 15px;
-}
-.offers__form input{
-    width: 100%;
-    border-radius: 3px;
-    height: 35px;
-    margin-bottom: 10px;
-    padding: 0 0 0 10px;
-}
-::placeholder{
-    font-weight: 600;
-}
-.offers__form button{
-    background-color: #ffa600;
-    color: #ffffff;
-    height: 35px;
-    padding: 0 19px;
-    font-size: 19px;
-    font-weight: 600;
-    width: 100%;
-    border-radius: 3px;
-}
-.offers__policy{
-    text-align: center;
-}
-.offers a{
-    font-size: 10px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-
-/* FOOTER */
-.footer{
-    font-size: 10px;
-    text-align: center;
-    background-color: #f7f7f7;
-}
-hr{
-    background-color: #e1e1e1;
-    height: 1.5px;
-    margin: 10px 5%;
-    width: 90%;
-}
-.footer__appmobile{
+.menu__list{
     display: flex;
-    padding: 25px 20px 0 20px;
+}
+.nav li{
+    font-size: 14px;
+    padding: 0 15px;
+}
+.menu__contact{
+    display: flex;
     align-items: center;
 }
-.footer__logo{
-    padding: 15px 20px;
+.menu__contact :nth-child(1){
+    text-align: right;
+    padding-right: 20px;
 }
-.footer__logo ul{
-    display: flex;
-    justify-content: space-around;
+.menu__contact :nth-child(3){
+    padding-left: 4px;
 }
-.footer__address{
-    color: #7d7d7d;
-    font-weight: 600;
-    line-height: 24px;
-    padding: 50px 30px;
+.menu__contact span{
+    border-left: 1px solid #DDD;
+    font-size: 25px;
+    padding-left: 20px;
 }
-
-@media (min-width: 375px){
-    .menu{
-        width: 53%;
-    }
-    .airlines__ratings{
-    margin: 0 auto;
-    display: flex;
+.banner{
+    background-color: #f7f7f7;
     justify-content: center;
-    }
-    .offers__form-header{
-        display: flex;
-        padding-bottom: 15px;
-    }
-    .offers__form-header p{
-        padding: 10px 20px 0 5px;
-    }
-    .offers__form{
-        padding: 15px 45px 15px;
-    }
-    .offers__policy{
-        padding-bottom: 35px;
-    } 
-    .footer__appmobile{
-        padding: 25px 20px 0 10px;
-    }
-    .footer__appmobile-afiliados{
-        padding-right: 20px;
-    }
-    .footer__logo ul{
-        justify-content: center;
-    }
-    .footer__logo li{
-        padding: 0 15px;
-    }
-}
-
-@media (min-width: 600px){
-    .menu{
-        width: 35%;
-    }
-    .airlines__ratings{
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    }
-    .offers__form-header{
-        display: flex;
-        padding-bottom: 15px;
-    }
-    .offers__form-header p{
-        padding: 10px 39px 0 5px;
-    }
-    .offers__form{
-        padding: 15px 50px 15px;
-    }
-    .offers__policy{
-        padding-bottom: 35px;
-    }
-    .footer__appmobile-afiliados{
-        order:1;
-        padding-left: 140px;
-    }
-    .footer__appmobile-googleapple{
-        order:2;
-        padding-left: 20px;
-    }
-    .footer__logo ul{
-        justify-content: center;
-    }
-    .footer__logo li{
-        padding: 0 15px;
-    }
+    padding: 5px 0;
 }
-
-@media (min-width: 900px){
-
+.container{
+    padding: 10px 70px;
+}
+.biggest-economy h2,
+.biggest-economy h3{
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+.biggest-economy h2{
+    padding-bottom: 30px;
+}
+.biggest-economy span{
+    color: #ccc;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.biggest-economy__offers{
+    display: flex;
+    margin-top: 40px;
 }
