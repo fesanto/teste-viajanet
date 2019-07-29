@@ -45,30 +45,166 @@ body{
     font-size: 25px;
     padding-left: 20px;
 }
+
+/* BANNER LATAM */
 .banner{
     background-color: #f7f7f7;
     justify-content: center;
     display: flex;
     padding: 5px 0;
 }
+
+/* CARDS */
 .container{
     padding: 10px 70px;
 }
+.biggest-economy{
+    background-color:#f7f7f7;
+}
 .biggest-economy h2,
-.biggest-economy h3{
+.favorite-destinations h2{
+    color: #333;
+    margin-top: 15px;
+}
+.biggest-economy h3,
+.favorite-destinations h3{
     font-size: 24px;
     color: #333;
-    margin-top: 20px;
+    margin-top: 25px;
 }
-.biggest-economy h2{
-    padding-bottom: 30px;
+.biggest-economy h2,
+.favorite-destinations h2{
+    padding-bottom: 15px;
+}
+.biggest-economy h4{
+    font-size: 15px;
+}
+.biggest-economy p{
+    font-size: 12px;
+    padding: 5px 0;
 }
 .biggest-economy span{
     color: #ccc;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0 2px;
+}
+.biggest-economy__text,
+.favorite-destinations__text{
+    color: #7d7d7d;
+    background-color: #ffffff;
+    margin-top: -3px;
+}
+.biggest-economy__text :nth-child(1){
+    padding-top: 11px;
+    font-weight: bold;
+}
+.biggest-economy__text :nth-child(2){
+    color: #010000;
+}
+.biggest-economy__text :nth-child(3){
+    font-weight: bold;
+}
+.biggest-economy__text :nth-child(3) span{
+    color: #ccc;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 2px;
+}
+.biggest-economy__text :nth-child(4){
+    text-transform: uppercase;
+}
+.biggest-economy__text :nth-child(4) span{
+    color: #ffa600;
     font-size: 16px;
-    padding-bottom: 30px;
+    font-weight: bold;
+}
+.biggest-economy__text :nth-child(5){
+    padding-bottom: 10px;
+}
+.biggest-economy__text :nth-child(6){
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #0082FF;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bolder;
 }
 .biggest-economy__offers{
     display: flex;
     margin-top: 40px;
+}
+.biggest-economy__offers div{
+    padding: 0 2px;
+}
+.biggest-economy__offers-box{
+    margin: 0 8px;
+}
+.biggest-economy__offers-box:hover{
+    box-shadow: 6px 6px 10px #999; 
+}
+.favorite-destinations{
+    background-color:#ebebeb;
+}
+.favorite-destinations__offers{
+    display: flex;
+    margin: 30px 0;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+.favorite-destinations__offers div{
+    padding: 6px 8px 4px 10px;
+}
+.favorite-destinations__text{
+    display: flex;
+}
+.favorite-destinations__text :nth-child(1){
+    color: #0164bf;
+    font-weight: bold;
+}
+.favorite-destinations__text :nth-child(3){
+    color: #ffa600;
+    font-weight: bold;
+    font-size: 18px;
+}
+.favorite-destinations__text :nth-child(2) span{
+    text-transform: uppercase;
+    color: #afafaf;
+    font-weight: bold;
+}
+
+.favorite-destinations__text :nth-child(2){
+    color: #afafaf;
+    font-size: 12px;
+    font-weight: bold;
+}
+.favorite-destinations__text-finalprice{
+    padding-top: 28px;
+    color: #7d7d7d!important;
+    text-align: right;
+    font-weight: 100!important;
+    margin-left: 6px;
+}
+.favorite-destinations__text-finalprice span{
+    text-transform: none!important;
+    font-weight: bolder;
+    color: #7d7d7d!important;
+    text-align: right;
+}
+
+/* AIRLINES */
+
+.airlines{
+    background-color: #f7f7f7;
+}
+.airlines__preferred{
+    display: flex;
+}
+.airlines h2{
+    color: #333;
+    margin-top: 10px;
 }
