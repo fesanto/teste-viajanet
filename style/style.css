@@ -205,7 +205,9 @@ header{
     color: #7d7d7d!important;
     text-align: right;
 }
-
+.international-slider{
+    display: none;
+}
 /* AIRLINES */
 .airlines-preferred{
     background-color: #f7f7f7;
@@ -506,6 +508,61 @@ hr{
     }
     .menu__bottom :nth-child(even){
         font-size: 20px;
+    }
+    .banner,
+    .biggest-economy,
+    .favorite-destinations{
+        display: none;
+    }
+    .international-slider{
+        display: block;
+    }
+    .international-slider{
+        padding-bottom: 45px;
+    }
+    .international-slider h2{
+        padding: 15px 15px 30px;
+        font-size: 22px;
+    }
+    .international-slider__container{
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .slide{
+        display: none;
+    }
+    .box{
+        background-color: #ffffff;
+        margin: 10px;
+    }
+    .slide img{
+        width:100%;
+    }
+    .slider-dot{
+        text-align:center;
+    }
+    .dot {
+        height: 7px;
+        width: 7px;
+        margin: 0 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .active, 
+    .dot:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .favorite-destinations__text{
+        flex-direction: column;
+        padding: 10px;
+        line-height: 1.5;
+    }
+    .favorite-destinations__text-finalprice{
+        padding-top: 0;
+        text-align: left;
+        margin-left: 0;
     }
     .airlines-preferred .container{
         padding: 1px 5px;
