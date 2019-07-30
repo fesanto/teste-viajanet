@@ -13,7 +13,10 @@
 body{
     background-color: #f7f7f7;
 }
-
+header{
+    display: flex;
+    justify-content: center;
+}
 .nav{
     background-color: #ffffff;
     display: flex;
@@ -22,12 +25,17 @@ body{
     padding: 10px 50px;
     font-weight: bold;
 }
-.menu__list{
-    display: flex;
-}
 .nav li{
     font-size: 14px;
     padding: 0 15px;
+}
+.menu__list{
+    display: flex;
+}
+.menu__list a:hover,
+.menu__contact li:hover,
+.menu__contact span:hover{
+    color: #0082FF;
 }
 .menu__contact{
     display: flex;
@@ -93,7 +101,7 @@ body{
 .favorite-destinations__text{
     color: #7d7d7d;
     background-color: #ffffff;
-    margin-top: -3px;
+    margin-top: -5px;
 }
 .biggest-economy__text :nth-child(1){
     padding-top: 11px;
@@ -136,6 +144,7 @@ body{
 }
 .biggest-economy__offers{
     display: flex;
+    justify-content: space-between;
     margin-top: 40px;
 }
 .biggest-economy__offers div{
@@ -152,12 +161,13 @@ body{
 }
 .favorite-destinations__offers{
     display: flex;
+    justify-content: space-between;
     margin: 30px 0;
     font-size: 14.5px;
     line-height: 1.5;
 }
 .favorite-destinations__offers div{
-    padding: 6px 8px 4px 10px;
+    padding: 6px 8px 4px 5px;
 }
 .favorite-destinations__text{
     display: flex;
@@ -166,21 +176,20 @@ body{
     color: #0164bf;
     font-weight: bold;
 }
-.favorite-destinations__text :nth-child(3){
-    color: #ffa600;
-    font-weight: bold;
-    font-size: 18px;
-}
 .favorite-destinations__text :nth-child(2) span{
     text-transform: uppercase;
     color: #afafaf;
     font-weight: bold;
 }
-
 .favorite-destinations__text :nth-child(2){
     color: #afafaf;
     font-size: 12px;
     font-weight: bold;
+}
+.favorite-destinations__text :nth-child(3){
+    color: #ffa600;
+    font-weight: bold;
+    font-size: 18px;
 }
 .favorite-destinations__text-finalprice{
     padding-top: 28px;
@@ -197,14 +206,76 @@ body{
 }
 
 /* AIRLINES */
-
-.airlines{
+.airlines-preferred{
     background-color: #f7f7f7;
 }
-.airlines__preferred{
+.airlines-preferred__options{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+.airlines-preferred__options div{
+    padding: 6px 8px 4px 3px;
+}
+.airlines-preferred h2{
+    color: #333;
+    margin-top: 0 35px;
+}
+.airlines-preferred__text{
+    background-color: #ffffff;
+    margin-top: -5px;
     display: flex;
 }
-.airlines h2{
-    color: #333;
-    margin-top: 10px;
+.airlines-preferred__text :nth-child(1){
+    color: #0164bf;
+    font-weight: bold;
+}
+.airlines-preferred__text :nth-child(2) span{
+    text-transform: uppercase;
+    color: #afafaf;
+    font-weight: bold;
+}
+.airlines-preferred__text :nth-child(2){
+    color: #afafaf;
+    font-size: 12px;
+    font-weight: bold;
+}
+.airlines-preferred__text :nth-child(3){
+    color: #ffa600;
+    font-weight: bold;
+    font-size: 18px;
+}
+.airlines-preferred__text-finalprice{
+    padding-top: 28px;
+    color: #7d7d7d!important;
+    text-align: right;
+    font-weight: 100!important;
+    margin-left: 6px;
+}
+.airlines-preferred__text-finalprice span{
+    text-transform: none!important;
+    font-weight: bolder;
+    color: #7d7d7d!important;
+    text-align: right;
+}
+.ratings ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.social-medias{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    background-color:#ebebeb;
+}
+.social-medias ul{
+    display: flex;
+    align-items: center;
+}
+.social-medias li{
+    font-size: 14px;
+    padding: 25px 50px;
 }
