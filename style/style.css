@@ -447,7 +447,7 @@ hr{
         background: none;
         cursor: pointer;
         z-index: 1000;
-        top: -6px;
+        /* top: -6px; */
     }
     .hamburguer span {
         top: 5px;
@@ -498,10 +498,12 @@ hr{
         padding: 20px 20px;
     }
     .menu__bottom{
-        color: #ffffff;
         font-size: 10px;
         padding: 25px 20px;
         line-height: 1.5;
+    }
+    .menu__bottom p{
+        color: #ffffff;
     }
     .menu__bottom :nth-child(1){
         text-transform: uppercase;
